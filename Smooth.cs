@@ -497,7 +497,7 @@ namespace Smoothget.Smooth {
           }
           base.TrackEntry = new TrackEntry(
               TrackType.Video, videoInfoBytes, CodecID.V_AVC,
-              this.GetAVCCodecPrivate(codecPrivateData, nalUnitLengthField));
+              GetAVCCodecPrivate(codecPrivateData, nalUnitLengthField));
           break;
         }
         case null: {
